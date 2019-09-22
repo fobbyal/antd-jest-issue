@@ -128,9 +128,10 @@
       "jest-watch-typeahead/testname"
     ]
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
+  "devDependencies": {
+    "babel-plugin-import": "^1.12.1",
+    "babel-plugin-ramda": "^2.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0"
   }
 }
