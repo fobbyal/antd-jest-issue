@@ -1,4 +1,4 @@
-# Minimal repo to produce antd jest testing issue
+# Minimal repo to produce and fix antd jest testing issue
 
 running `yarn test` will return the following issue
 
