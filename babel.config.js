@@ -17,12 +17,19 @@ module.exports = function(api) {
       "@babel/plugin-proposal-object-rest-spread",
       "@babel/plugin-transform-async-to-generator",
       "@babel/plugin-proposal-class-properties",
-      [
-        "import",
-        // { libraryName: 'antd', libraryDirectory: 'es', style: name => `${name}/style/index.css` },
-        { libraryName: "antd", libraryDirectory: "lib", style: "css" },
-        "antd"
-      ],
+      isTest
+        ? [
+            "import",
+            // { libraryName: 'antd', libraryDirectory: 'es', style: name => `${name}/style/index.css` },
+            { libraryName: "antd", libraryDirectory: "lib", style: "css" },
+            "antd"
+          ]
+        : [
+            "import",
+            // { libraryName: 'antd', libraryDirectory: 'es', style: name => `${name}/style/index.css` },
+            { libraryName: "antd", libraryDirectory: "es", style: true },
+            "antd"
+          ],
       [
         "import",
         // { libraryName: 'antd', libraryDirectory: 'es', style: name => `${name}/style/index.css` },
