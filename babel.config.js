@@ -20,7 +20,7 @@ module.exports = function(api) {
       [
         "import",
         // { libraryName: 'antd', libraryDirectory: 'es', style: name => `${name}/style/index.css` },
-        { libraryName: "antd", libraryDirectory: "es", style: true },
+        { libraryName: "antd", libraryDirectory: "lib", style: "css" },
         "antd"
       ],
       [
